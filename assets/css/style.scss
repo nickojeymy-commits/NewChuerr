@@ -1,0 +1,20 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 全局页面背景 */
+body {
+  /* 网络图片直接写完整url；本地图片就写 url("/assets/img/bg.jpg") */
+  background-image: url("https://chur.ichuer.xyz/wp-content/uploads/2026/09/36d40f51a13a8f0138ba0deddf9e1848-e1790579347371.jpg");
+  background-size: cover;       /* 铺满屏幕，自动裁剪 */
+  background-repeat: no-repeat; /* 不重复平铺 */
+  background-attachment: fixed;/* 滚动页面背景不动（固定背景） */
+  background-position: center;
+}
+
+/* 给文字容器加半透底色，防止图片太亮文字看不清，可删掉 */
+div.page {
+  background-color: rgba(255,255,255,0.75);
+  padding: 20px;
+  border-radius: 8px;
+}
